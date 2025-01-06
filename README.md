@@ -25,7 +25,7 @@ Technologies Used
 •	CSS
 Setup and Installation
 1.	Clone the repository using command line:
-git clone https://github.com/ES-AR/travel-website.git 
+git clone https://github.com/Alvba001/travel-website.git 
 2.	Navigate to the project directory using command line:
 cd travel-website
 3.	Open the index.html file in your browser to view the website.
