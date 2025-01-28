@@ -355,3 +355,92 @@ p{
 .footer-links li {
     margin: 10px;
 }
+
+/* media query */
+@media screen and (min-width: 960px) {
+    
+    body {
+        margin: 0 100px;
+    }
+
+    .promo-container h1 {
+        text-align: center;
+    }
+
+    .promo-image-box {
+        width: 750px;
+    }
+
+    .promo-flex-box{
+        padding-bottom: 200px;
+    }
+
+    .blur-background {
+        z-index: -2;
+        top: -231px;
+        left: 0;
+    }
+
+    .travel-section h2 {
+        text-align: center;
+    }
+
+    .travel-section p {
+        text-align: center;
+    }
+
+    .travel-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-description p {
+        text-align: left;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+
+    .reviews-section {
+        margin-top: 100px;
+    }
+
+    .adventurers {
+        width: 400px;
+    }
+
+    .inline-h2 {
+        display: inline-block;
+        margin-right: 700px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(20px, auto));
+        gap: 20px;
+    }
+
+    .footer-info p {
+        width: 60%;
+    }
+
+    .social-icons {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-content: start;
+    }
+
+    .footer-links {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 20px;
+    }
+
+}
