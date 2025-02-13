@@ -5,6 +5,7 @@
     <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#live-demo">Live Demo</a></li>
+         <li><a href="#loomvideo">Loom</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#technologies-used">Technologies Used</a></li>
         <li><a href="#setup-and-installation">Setup and Installation</a></li>
@@ -18,6 +19,9 @@
 
 <h2 id="live-demo">Live Demo</h2>
     <p>Check out the live demo of the project: <a href="https://travel-website-6z8i.onrender.com" target="_blank">Click to view Live Demo</a></p>
+    <h2 id="loomvideo">Loom</h2>
+    <p>Check out the loom video of the project: <a href="" target="_blank">Click to view Loom Video</a></p>
+
 
 <h2 id="features">Features</h2>
     <ul>
