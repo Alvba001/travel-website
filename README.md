@@ -20,7 +20,7 @@
 <h2 id="live-demo">Live Demo</h2>
     <p>Check out the live demo of the project: <a href="https://travel-website-6z8i.onrender.com" target="_blank">Click to view Live Demo</a></p>
     <h2 id="loomvideo">Loom</h2>
-    <p>Check out the loom video of the project: <a href="" target="_blank">Click to view Loom Video</a></p>
+    <p>Check out the loom video of the project: <a href="https://drive.google.com/file/d/1UZV_luncX2xT5nFzinW3x6KME0MQGaaE/view?usp=drivesdk" target="_blank">Click to view Loom Video</a></p>
 
 
 <h2 id="features">Features</h2>
