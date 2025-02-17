@@ -57,7 +57,7 @@
     </ol>
 
 <h2 id="license">License</h2>
-    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> </p>
+    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 <h2 id="creators">Creator(s)</h2>
     <ul>
