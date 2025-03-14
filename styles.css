@@ -211,9 +211,11 @@ body{
 /* sections */
 
 .destination-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
 }
 
 .destination-section,
@@ -367,15 +369,12 @@ body{
 }
 
 .cards{
-    width: 100%;
+    width: 350px;
     height: auto;
-    margin: 0 auto;
     padding: 10px;
 }
 
 .guide-cards {
-    width: 100%;
-    height: auto;
     margin: 0 auto;
     padding: 10px;
 }
@@ -719,10 +718,6 @@ body{
         text-align: center;
     }
 
-    .doc-text {
-        width: 620px;
-    }
-
     .doc-text h2 {
         margin: 0 auto;
     }
@@ -737,9 +732,10 @@ body{
     }
 
     .guide-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
     }
 
     .guide-grid h3 {
