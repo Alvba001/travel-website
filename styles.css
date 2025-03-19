@@ -4,107 +4,97 @@
     box-sizing: border-box;
 }
 
-/* variable */
+body{
+    min-height: 100vh;
+}
+
+/* variables */
 :root {
     --primary: #25A59E;
 }
+
+/* reset */
 
 a {
     text-decoration: none;
     color: #313131;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
 li {
     list-style-type: none;
 }
 
-
+/* base styles */
 p, h1, h2, h3 {
     padding: 1.1rem;
 }
 
 body {
-    font-family: 'Gill Sans', sans-serif;
     overflow-x: hidden;
-    line-height: 1.6;
-    background: #e9e6e6;
-    min-height: 100vh;
+    line-height: 1.3;
 }
 
-
-
-h1, h2, h3 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* fonts size*/
-h1 {
-    font-size: 2.8em;
-}
-h1, h2, h3, h4{
-    font-weight: normal;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3{
-    font-size: 2.2em;
-}
-
-p{
-    font-size: 1.1em;
-}
-
-/* highlighted colored text */
-.highlighted-text {
-    color: var(--primary);
-}
-
-/* navigation */
-.menu-bar {
+.site-nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.menu-bar p {
+.site-nav p {
     padding: 0;
 }
 
-.menu-icon {
+.menu {
     display: inline-block;
     height: 24px;
-    padding: 1%px;
+    padding: 1%px;    
 }
 
-/* header */
-.main-header {
+.menu-2 {
+    display: none;
+}
+
+.header {
     text-align: center;
     padding: 0;
 }
 
-/* first image positioning */
-.promo-flex-box {
+h1 {
+    font-size: 2.2em;
+}
+
+
+/* first picture positioning */
+.header-images {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.promo-image-box {
+.banner-image-container {
     position: relative;
     width: 500px;
     height: 250px;
 }
 
-.promo-image-box img {
+.banner-image-container img {
     position: absolute;
     width: 100%;
     object-fit: cover;
 }
 
-.selfie-photo {
+.couples {
     z-index: 0;
     top: 5px;
     left: 0;
@@ -116,202 +106,37 @@ p{
     left: 0;
 }
 
-.blur-background {
+.blurry {
     z-index: -2;
     top: -156px;
     left: 0;
 }
 
-/* sections */
-.travel-section,
-.reasons-section,
-.reviews-section,
-.documentation-section {
-    margin: 0 10px;
-    padding: auto;
-}
-
-/* travel-section */
-.travel-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-.place-images {
-    width: 100%;
-    height: auto;
-    margin: 0;
-}
-.travel-cards {
-    border: 1px solid #ddd;
-    padding: 10px;
-    background: #ffffff;
-}
-
-.travel-cards{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.card-description{
-    margin-left: 10px;
-}
-
-.card-description p{
-    font-size: 16px;
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-
-.card-description h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 0;
-}
-
-.map-icon {
-    width: 24px;
-    margin-right: 5px;
-    margin-bottom: -4px;
-    display: inline-block;
-}
-
-/* reasons-section */
-/* feature-grid */
-.reasons-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.reasons-card {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.reasons-grid p, h3 {
-    text-align: left;
-    margin: 0;
-}
-
-.reasons-section h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.reasons-section p {
-    text-align: center;
-    margin-top: 15px;
-    padding-top: 0;
-}
-
-/* reasons-card */
-.top-outlined-card {
-    border-top: 5px solid var(--primary);
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-.top-outlined-card a {
-    float: right;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: var(--primary);
-}
-
-.top-outlined-card a, 
-.top-outlined-card img {
-    margin-bottom: -12px;
-}
-
-.reasons-card{
-    border-left: 1px solid #ddd;
-    background: #ffffff;
-}
-
-.special-card {
-    background: var(--primary);
-}
-
-.special-card a {
-    color: #fff;
-    float: right;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.special-card img {
-    margin-bottom: -12px;
-}
-
-/* reviews-section */
-/* testimonial-card */
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.testimonial-card h2, 
-.testimonial-card p {
-    margin: 0;
-    padding: 5px;
-}
-
-.testimonial-card h2 {
-    font-size: 2.2em;
-}
-
-/* adventuring couples image positioning */
-.adventuring-couple {
+/* second picture positioning */
+.traveling-couple {
     position: relative;
     text-align: center;
     max-width: 300px;
 }
 
-.adventurers {
+.couples-2 {
     width: 100%;
 }
 
 .shape {
     position: absolute;
-    max-width: 300px;
     top: 125px;
     left: 25px;
     z-index: -1;
 }
 
-.adventurers {
-    width: 350px;
+.shape {
+    width: 300px;
 }
 
-/* docs-section */
-.docs-video {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-}
 
-.documentation-section h2 {
-    font-size: 2.2em;
-}
-
-.docs-heading {
-    text-align: center;
-
-}
-
-/* button */
-.action-button{
+/* last button */
+.button{
     width: 147px;
     height: 54px;
     background: var(--primary);
@@ -322,20 +147,141 @@ p{
     margin: 10px;
 }
 
+.button:hover{
+    color: var(--primary);
+    background: #ddf3f2;
+}
+
+
+/* body display */
+
+body{
+    background: #e9e6e6;
+    margin: 0;
+}
+
+/* sections */
+
+.destination-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.destination-section,
+.offer-section,
+.documentation-section,
+.feedback-section {
+    margin: 0 10px;
+    padding: auto;
+}
+
+.offer-section h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.offer-section p {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 0;
+}
+
+/* guide cards */
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.guide-grid p, h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.upper-border-card {
+    border-top: 5px solid var(--primary);
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.upper-border-card a {
+    float: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.upper-border-card a, .upper-border-card img {
+    margin-bottom: -12px;
+}
+
+.guide-cards {
+    border-left: 1px solid #ddd;
+    background: #ffffff;
+}
+
+.green-guide-cards {
+    background: var(--primary);
+}
+
+.green-guide-cards a {
+    color: #fff;
+    float: right;
+    padding: 10px;
+}
+
+.green-guide-cards img {
+    margin-bottom: -12px;
+}
+
+/* feature cards */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.feature-card h2, .feature-card p {
+    margin: 0;
+    padding: 5px;
+}
+
+.feature-card h2 {
+    font-size: 1.5em;
+}
+
+/* documentation-section */
+
+.documentation-section h2 {
+    font-size: 2.2em;
+}
+
+.h2-documentation {
+    text-align: center;
+
+}
+
 /* footer */
 
-.footer-info p {
+.footer-part p {
     padding-bottom: 0;
     margin: 0;
 }
 
 /* social media icons */
-.social-media {
+.media-icon {
     width: 50px;
     margin: 5px;
 }
 
-.social-icons {
+.flex-container-1 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -343,7 +289,7 @@ p{
 }
 
 /* links */
-.footer-links {
+.flex-container-2 {
     display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
@@ -352,6 +298,263 @@ p{
     width: 100%;
 }
 
-.footer-links li {
+.flex-container-2 li {
     margin: 10px;
+}
+
+/* span colored text */
+.span-color {
+    color: var(--primary);
+}
+
+
+.images{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.cards {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.cards{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+}
+
+.guide-cards {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.doc-vid-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    margin-left: 10px;
+}
+
+.card-content p{
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.card-content h3 {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.location-icon {
+    width: 24px;
+    margin-right: 5px;
+    margin-bottom: -4px;
+    display: inline-block;
+}
+
+.couples-2{
+    width: 350px;
+}
+
+
+/* Desktops-view//*/
+@media screen and (min-width: 1024px) {
+    
+    body {
+        margin: 0;
+    }
+
+    .offer-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inline-h2 {
+        font-size: 40px;
+    }
+
+    .banner-container {
+        margin: 0 auto;
+    }
+
+    .banner-container {
+        width: 850px;
+    }
+
+    .banner-container h1 {
+        text-align: center;
+        font-size: 130px;
+        padding: 0 0;
+    }
+
+    .menu-2 {
+        display: inline-block;
+        height: 24px;
+        margin-left: 800px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .site-nav {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .banner-image-container {
+        width: 750px;
+    }
+
+    .banner-flex{
+        padding-bottom: 200px;
+    }
+
+    .blurry {
+        z-index: -2;
+        top: -231px;
+        left: 0;
+    }
+
+    .destination-section h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .destination-section p {
+        text-align: center;
+    }
+
+    .doc-text h2 {
+        margin: 0 auto;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 30px;
+    }
+
+    .card-content p {
+        text-align: left;
+    }
+
+    .guide-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .guide-grid h3 {
+        font-size: 1.5em;
+    }
+
+    .guide-grid {
+        margin: 0 30px;
+    }
+
+    .feature-grid {
+        display: flex;
+        gap: 40px;
+        flex-grow: 0;
+        justify-content: space-evenly;
+    }
+
+    .f-w h2 {
+        max-width: 390px;
+        font-size: 50px;
+    }
+
+    .f-w p {
+        max-width: 404px;
+        text-align: justify;
+    }
+
+    .destination-section, 
+    .offer-section,
+    .feedback-section,
+    footer {
+        margin: 0 10px;
+    }
+
+    .traveling-couple {
+        margin-right: 100px;
+    }
+
+    .feedback-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .couples-2 {
+        width: 500px;
+    }
+
+    .shape {
+        width: 400px;
+        top: 188px;
+        left: 54px;
+    }
+
+    .arrow {
+        margin-top: 70px;
+    }
+
+    .inline-h2 {
+        display: inline-block;
+        margin-right: 400px;
+    }
+
+    .documentation-section h2 {
+        font-size: 72px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(20px, auto));
+        gap: 20px;
+    }
+
+    .footer-part p {
+        width: 60%;
+    }
+
+    .flex-container-1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-content: start;
+    }
+
+    .flex-container-2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 20px;
+    }
+
+}
+
+/* Imported Google fonts */
+.Urbanist {
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.gilda {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rotation {
+    background-position: center;
+    transform: rotate(180deg);
 }
